@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 :root {
     --gold: #d5966c;
     --black: #151515;
     --dark-grey: #444444;
     --white: #ffffff;
+    --off-white: #fcfaf9;
 
     --heading-xl: 6rem;
     --heading-l: 4.375rem;
@@ -14,6 +15,82 @@
     --body-s: 1.125rem;
 }
 
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Big Shoulders", sans-serif;
+    background-color: var(--off-white);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+main {
+    gap: 7.5rem;
+}
+
+.hero {
+    gap: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.hero .info {
+    gap: 2rem;
+    padding: 2rem 1rem 0;
+}
+
+h1 {
+    color: var(--black);
+    font-size: var(--heading-m);
+    line-height: 55px;
+    text-transform: uppercase;
+}
+
+.hero .info p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: var(--dark-grey);
+}
+
+.hero .info .actions {
+    display: flex;
+    gap: 0;
+    height: 72px;
+}
+
+.hero .info .actions .location {
+    font-family: 'Big Shoulders', sans-serif;
+    padding: 1.5rem 2.1875rem 1.5rem 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 3.64px;
+}
+
+.hero .info .actions .arrow-right {
+    background-color: var(--gold);
+    padding: 1.5rem;
+}
+
+.hero .info .actions .arrow-right img {
+    width: 0.5rem;
+    height: 1.5rem;
 }

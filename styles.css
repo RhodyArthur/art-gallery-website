@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --gold: #d5966c;
+    --black: #151515;
+    --dark-grey: #444444;
+    --white: #ffffff;
+
+    --heading-xl: 6rem;
+    --heading-l: 4.375rem;
+    --heading-m: 3.75rem;
+    --heading-s: 2.25rem;
+    --body-m: 1.375rem;
+    --body-s: 1.125rem;
+}
+
+body {
+    font-family: "Big Shoulders", sans-serif;
+}

@@ -70,13 +70,19 @@ h1 {
     color: var(--dark-grey);
 }
 
-.hero .info .actions {
+.hero .info .actions, .location-info .actions {
     display: flex;
     gap: 0;
     height: 72px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.hero .info .actions .location {
+.hero .info .actions:hover, .location-info .actions:hover {
+    text-decoration: none;
+}
+
+.hero .info .actions .location, .location-info .actions .location {
     font-family: 'Big Shoulders', sans-serif;
     padding: 1.5rem 2.1875rem 1.5rem 2rem;
     background-color: var(--black);
@@ -86,12 +92,12 @@ h1 {
     letter-spacing: 3.64px;
 }
 
-.hero .info .actions .arrow-right {
+.hero .info .actions .arrow-right, .location-info .actions .arrow-left{
     background-color: var(--gold);
     padding: 1.5rem;
 }
 
-.hero .info .actions .arrow-right img {
+.hero .info .actions .arrow-right img, .location-info .actions .arrow-left img {
     width: 0.5rem;
     height: 1.5rem;
 }
@@ -111,7 +117,7 @@ h1 {
     gap: 21px;
 }
 
-.content .your-day h2, .content .inspired h2 {
+.content .your-day h2, .content .inspired h2, .location-info h2 {
     font-size: 50px;
     line-height: 45px;
     text-transform: uppercase;
@@ -173,4 +179,56 @@ footer p {
 footer .socials {
     display: flex;
     gap: 1.25rem;
+}
+
+.location-info {
+    padding: 3rem 1rem;
+    gap: 3rem;
+    background-color: var(--black);
+}
+
+.location-info h2 {
+    color: var(--white);
+}
+
+.location-info .location-details {
+    gap: 1.25rem;
+}
+
+.location-info .location-details address {
+    color: var(--white);
+    font-style: normal;
+}
+
+.location-info .location-details h3 {
+    color: var(--gold);
+    font-size: 2rem;
+}
+
+.location-info .location-details p, .location-info .location-details address {
+    font-family: "Outfit", sans-serif;
+    font-size: var(--body-s);
+    font-weight: 300;
+    color: var(--white);
+}
+
+.location-footer {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+.map {
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+}
+
+.location-info .actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (min-width: 768px) {
+    
 }

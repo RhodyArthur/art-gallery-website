@@ -65,6 +65,7 @@ h1 {
 
 .hero .info p {
     font-family: 'Outfit', sans-serif;
+    line-height: 28px;
     font-weight: 300;
     color: var(--dark-grey);
 }
@@ -93,4 +94,64 @@ h1 {
 .hero .info .actions .arrow-right img {
     width: 0.5rem;
     height: 1.5rem;
+}
+
+.content {
+    display: grid;
+    padding-inline: 1rem;
+    gap: 1rem;
+}
+
+.content img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.content .your-day {
+    gap: 21px;
+}
+
+.content .your-day h2 {
+    font-size: 50px;
+    line-height: 45px;
+    color: var(--black);
+    font-family: "Big Shoulders", sans-serif;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+}
+
+.content .your-day p {
+    color: var(--dark-grey);
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: var(--body-s);
+    line-height: 28px;
+}
+
+.content .image-grid-2 {
+    height: 30rem;
+}
+
+.content .image-grid-3 {
+    height: 12.5rem;
+}
+
+.content .inspired {
+    gap: 1.5rem;
+    padding: 3rem 1.5rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.content .inspired h2 {
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.content .inspired p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: var(--body-s);
+    line-height: 28px;
 }

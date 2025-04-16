@@ -111,12 +111,14 @@ h1 {
     gap: 21px;
 }
 
-.content .your-day h2 {
+.content .your-day h2, .content .inspired h2 {
     font-size: 50px;
     line-height: 45px;
-    color: var(--black);
-    font-family: "Big Shoulders", sans-serif;
     text-transform: uppercase;
+}
+
+.content .your-day h2 {
+    color: var(--black);
     margin-top: 0.5rem;
 }
 
@@ -138,15 +140,12 @@ h1 {
 
 .content .inspired {
     gap: 1.5rem;
+}
+
+.content .inspired, footer {
     padding: 3rem 1.5rem;
     background-color: var(--black);
     color: var(--white);
-}
-
-.content .inspired h2 {
-    font-size: 50px;
-    line-height: 45px;
-    text-transform: uppercase;
 }
 
 .content .inspired p {
@@ -154,4 +153,24 @@ h1 {
     font-weight: 300;
     font-size: var(--body-s);
     line-height: 28px;
+}
+
+footer {
+    gap: 38px;
+}
+
+footer h2 {
+    text-transform: uppercase;
+}
+
+footer p {
+    font-size: 1rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+footer .socials {
+    display: flex;
+    gap: 1.25rem;
 }

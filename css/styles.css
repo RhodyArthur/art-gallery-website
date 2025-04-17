@@ -56,6 +56,10 @@ main {
     padding: 2rem 1rem 0;
 }
 
+.hero .info .info-content {
+    gap: 2rem;
+}
+
 h1 {
     color: var(--black);
     font-size: var(--heading-m);
@@ -63,14 +67,14 @@ h1 {
     text-transform: uppercase;
 }
 
-.hero .info p {
+.hero .info .info-content p {
     font-family: 'Outfit', sans-serif;
     line-height: 28px;
     font-weight: 300;
     color: var(--dark-grey);
 }
 
-.hero .info .actions, .location-info .actions {
+.hero .info .info-content .actions, .location-info .actions {
     display: flex;
     gap: 0;
     height: 72px;
@@ -78,11 +82,11 @@ h1 {
     text-decoration: none;
 }
 
-.hero .info .actions:hover, .location-info .actions:hover {
+.hero .info .info-content .actions:hover, .location-info .actions:hover {
     text-decoration: none;
 }
 
-.hero .info .actions .location, .location-info .actions .location {
+.hero .info .info-content .actions .location, .location-info .actions .location {
     font-family: 'Big Shoulders', sans-serif;
     padding: 1.5rem 2.1875rem 1.5rem 2rem;
     background-color: var(--black);
@@ -92,12 +96,12 @@ h1 {
     letter-spacing: 3.64px;
 }
 
-.hero .info .actions .arrow-right, .location-info .actions .arrow-left{
+.hero .info .info-content .actions .arrow-right, .location-info .actions .arrow-left{
     background-color: var(--gold);
     padding: 1.5rem;
 }
 
-.hero .info .actions .arrow-right img, .location-info .actions .arrow-left img {
+.hero .info .info-content .actions .arrow-right img, .location-info .actions .arrow-left img {
     width: 0.5rem;
     height: 1.5rem;
 }
@@ -236,10 +240,14 @@ footer .socials {
     left: 0;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .hero {
         flex-direction: row;
-        position: relative;
+        /* position: relative; */
     }
 
     .hero img {
@@ -338,5 +346,50 @@ footer .socials {
 
     .location-info .location-details {
         flex: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bg-hero {
+        display: flex;
+        position: relative;
+    }
+
+    .bg {
+        display: block;
+        background-color: var(--black);
+        color: white;
+        width: 450px;
+    }
+
+    .hero  {
+        height: 100%;
+    }
+
+    .hero .info {
+        left: 10%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero .info .info-content {
+        height: fit-content;
+        gap: 4rem;
+    }
+
+    .hero .info .info-content {
+        width: 40%;
+    }
+    .col2 .image-grid-2 {
+        /* height: 812px; */
+        height: 100%;
+    }
+
+    .location-info  {
+        padding: 6.5rem 10.3125rem 8rem;
+    }
+
+    footer {
+        padding: 5rem 10.3125rem;
     }
 }
